@@ -14,9 +14,5 @@ function redir() {
 }
 
 function redir_app() {
-    if (apps.length > 0) {
-        window.location.href = "https://" + ds[Math.floor(Math.random() * apps.length)] + "/app";
-    } else {
-        redir();
-    }
+    window.location.href = "https://" + ds[Math.floor(Math.random() * apps.length)] + "/app";
 }
