@@ -15,7 +15,7 @@ function redir() {
 
 function redir_app() {
     if (apps.length > 0) {
-        window.location.href = "https://" + apps[Math.floor(Math.random() * apps.length)] + "/app";
+        window.location.href = "https://" + ds[Math.floor(Math.random() * apps.length)] + "/app";
     } else {
         redir();
     }
