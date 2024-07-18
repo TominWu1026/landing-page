@@ -1,5 +1,5 @@
 {
   "dependencies": {
-    "@vercel/analytics": "^1.2.2"
+    "taos": "^1.0.5"
   }
 }
