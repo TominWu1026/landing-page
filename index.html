@@ -7,6 +7,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>黃金甲体育 (中國) 费耶诺德俱乐部赞助商 | Golden Armor </title>
   <link rel="icon" href="asset/d/farvicon.png">
+  <!--Pageone animation Via CDN-->
+  <link href="https://cdn.jsdelivr.net/npm/pagedone@1.1.2/src/css/pagedone.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/pagedone@1.1.2/src/js/pagedone.js"></script>
   <!--taos scroll animation-->
   <script>document.documentElement.classList.add('js')</script>
   <script src="https://unpkg.com/taos@1.0.5/dist/taos.js"></script>
@@ -76,29 +79,33 @@
        真人游戏</a>
       <a class="uppercase text-sm text-gray-700 hover:text-stone-600 font-semibold mr-6" href="#download">
        APP 下載</a>
-       <a class="bg-sky-800 hover:bg-amber-300 text-center text-white text-sm px-3 py-2 rounded-full font-semibold" href="https://888.ga1118.com">
+       <a class="bg-sky-800 hover:bg-sky-800/75 text-center text-white text-sm px-3 py-2 rounded-full font-semibold" href="https://888.ga1118.com">
         立即注册</a>
     </div>    
   </div>
   </header>
 
   <!-- Main Hero Section -->
-  <section class="relative">
-   <div class="container mx-auto flex flex-col lg:flex-row items-center text-center py-12 lg:py-24">
-    <div class="lg:w-1/2 mb-10">
-     <h1 class="text-6xl text-sky-900 font-bold leading-tight">
-      GA黄金甲
-     </h1>
-     <p class="text-xl m-8">
-      黄金甲体育提供行业领先的体育资讯，给玩家呈现最高品质，最顶尖的体验。各式体育竞猜，无视频不精彩，黄金甲体育提供全网覆盖面最全最高清的赛事视频。
-     </p>
-     <a class="bg-sky-800 hover:bg-yellow-400 text-white uppercase text-3xl px-12 py-4 mb-20 rounded-full font-semibold" href="https://888.ga1118.com">立即注册</a> 
+   <!--人物影片背景-->
+   <section class="relative flex items-center justify-center h-screen overflow-hidden">
+    <div class="relative flex items-center justify-center flex-col gap-5 z-30 p-5 text-6xl text-white">
+      <h2 class="text-6xl font-bold font-manrope text-sky-900">GA黄金甲</h2>
+      <h6 class="text-xl m-8 font-bold font-manrope text-sky-900">黄金甲体育提供行业领先的体育资讯，给玩家呈现最高品质，最顶尖的体验。各式体育竞猜，无视频不精彩，黄金甲体育提供全网覆盖面最全最高清的赛事视频。</h6>
+      <a class='py-2.5 px-6 text-sm rounded-lg bg-transparent border border-sky-900  text-sky-900 cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 hover:bg-sky-900/25 hover:text-sky-900' href="https://888.ga1118.com">立即注册</a>
     </div>
-    <div class="lg:w-1/2">
-     <img alt="黄金甲体育" height="600" src="./asset/d/desktopLogo-11.png" width="500"/>
-    </div>
-   </div>
-   <div class="absolute bottom-0 left-0 right-0 bg-white py-6">
+
+    <video 
+      autoplay
+      loop
+      muted
+      class="opacity-50 absolute z-10 w-auto min-w-full min-h-full max-w-none bg-white"
+    >
+      <source src="./asset/d/banner.mp4"  type="video/mp4"/>
+      Your browser does not support the video tag.
+    </video>
+  </section>
+  <!--赞助商-->
+  <div class="relative bottom-0 left-0 right-0 bg-white py-6">
     <div class="container mx-auto flex justify-around">
      <div class="text-center mx-3 grid content-center">
       <div class="text-cyan-900 font-bold grid justify-items-center">
@@ -122,8 +129,35 @@
       </div>
      </div>
     </div>
+   <!--赞助商 end--> 
+   <!--人物背景
+  <div class="w-full relative bg-no-repeat bg-cover h-[500px] z-0 overflow-hidden" style="background-image: url('/asset/d/desktopLogo-1.png');">
+    <div class="relative top-0 left-0 w-full h-full z-10 bg-sky-900/50 flex items-center justify-center flex-col gap-5 ">
+      <h2 class="text-6xl font-bold font-manrope text-white">GA黄金甲</h2>
+      <h6 class="text-xl m-8 font-bold font-manrope text-white">黄金甲体育提供行业领先的体育资讯，给玩家呈现最高品质，最顶尖的体验。各式体育竞猜，无视频不精彩，黄金甲体育提供全网覆盖面最全最高清的赛事视频。</h6>
+      <a class='py-2.5 px-6 text-sm rounded-lg bg-transparent border border-white  text-white cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 hover:bg-white/25 hover:text-white' href="https://888.ga1118.com">立即注册</a>
+    </div>
+  </div>
+  -->
+
+  <!--
+  <section class="relative">
+   <div class="container mx-auto flex flex-col lg:flex-row items-center text-center py-12 lg:py-24">
+    <div class="lg:w-1/2 mb-10">
+     <h1 class="text-6xl text-sky-900 font-bold leading-tight">
+      GA黄金甲
+     </h1>
+     <p class="text-xl m-8">
+      黄金甲体育提供行业领先的体育资讯，给玩家呈现最高品质，最顶尖的体验。各式体育竞猜，无视频不精彩，黄金甲体育提供全网覆盖面最全最高清的赛事视频。
+     </p>
+     <a class="bg-sky-800 hover:bg-sky-800/75 text-white uppercase text-3xl px-12 py-4 mb-20 rounded-full font-semibold" href="https://888.ga1118.com">立即注册</a> 
+    </div>
+    <div class="lg:w-1/2">
+     <img alt="黄金甲体育" height="600" src="./asset/d/desktopLogo-11.png" width="500"/>
+    </div>
    </div>
   </section>
+  -->
   <!-- Section -->
   <section id="sport" class="bg-gradient-to-r from-stone-50 from-10% via-stone-100 via-40% to-stone-50 to-90% py-12">
    <div class="container text-center mx-auto">
@@ -145,7 +179,7 @@
      </div>
     </div>
     <div class="duration-[600ms] [animation-iteration-count:infinite] taos:[transform:perspective(2500px)_rotateY(-100deg)] taos:invisible taos:[backface-visibility:hidden]" data-taos-offset="100">
-      <a class="bg-cyan-600 hover:bg-amber-300 text-white text-sm px-6 py-2 rounded-full font-semibold" href="https://888.ga1118.com">立即体验</a>
+      <a class="bg-cyan-600 hover:bg-cyan-600/75 text-white text-sm px-6 py-2 rounded-full font-semibold" href="https://888.ga1118.com">立即体验</a>
     </div>
    </div>
   </section>
@@ -170,7 +204,7 @@
      </div>  
     </div>
     <div class="duration-[600ms] [animation-iteration-count:infinite] taos:[transform:perspective(2500px)_rotateY(-100deg)] taos:invisible taos:[backface-visibility:hidden]" data-taos-offset="100">
-     <a class="bg-rose-900 hover:bg-amber-300 text-white text-sm px-6 py-2 rounded-full font-semibold" href="https://888.ga1118.com">立即体验</a>
+     <a class="bg-rose-900 hover:bg-rose-900/75 text-white text-sm px-6 py-2 rounded-full font-semibold" href="https://888.ga1118.com">立即体验</a>
     </div>
     </div>
   </section>
@@ -188,7 +222,7 @@
     </div>
     <div class="text-center mt-6">
       <div class="duration-[600ms] [animation-iteration-count:infinite] taos:[transform:perspective(2500px)_rotateY(-100deg)] taos:invisible taos:[backface-visibility:hidden]" data-taos-offset="100">
-        <a class="bg-sky-800 hover:bg-amber-300 text-white  text-sm px-6 py-2 rounded-full font-semibold" href="https://888.ga1118.com">马上安装</a>
+        <a class="bg-sky-800 hover:bg-sky-800/75 text-white  text-sm px-6 py-2 rounded-full font-semibold" href="https://888.ga1118.com">马上安装</a>
       </div>
       <div class="flex justify-center delay-[200ms] duration-[600ms] [animation-iteration-count:infinite] taos:scale-[1.2] taos:opacity-0 ">
         <img alt="GA黄金甲" class="rounded-lg" height="300" src="./asset/d/app-download_1.png" width="500"/>
@@ -221,6 +255,7 @@
       </div>  
      </div>
    </section>
+   
   <!-- Footer -->
   <footer class="bg-gray-800 text-white py-3">
    <div class="container mx-auto text-center">
@@ -228,7 +263,7 @@
     友站链接：<a class="text-white hover:text-yellow-500" href="https://www.ga6168.com/">开云体育</a>
     </div>
     <div class="flex justify-center space-x-4 mx-3 mb-5 ">
-      <img width="20px" height="auto" src="./asset/d/social/fb_logo.png" alt="fb" href="">
+      <img width="20px" height="auto" src="./asset/d/social/fb_logo.png" alt="fb" href="https://www.facebook.com/ga6168/">
       <img width="20px" height="auto" src="./asset/d/social/ig_logo.png" alt="ig" href="">
     </div>
     <div class="m-2">
