@@ -10,6 +10,10 @@
   <!--taos scroll animation-->
   <script>document.documentElement.classList.add('js')</script>
   <script src="https://unpkg.com/taos@1.0.5/dist/taos.js"></script>
+  <!--Pageone animation Via CDN--><!--
+  <link href="https://cdn.jsdelivr.net/npm/pagedone@1.1.2/src/css/pagedone.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/pagedone@1.1.2/src/js/pagedone.js"></script>
+  -->
   <!-- Google Tag Manager -->
 	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -17,9 +21,7 @@
 	'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 	})(window,document,'script','dataLayer','GTM-TL92CZ5D');</script>
 	<!-- End Google Tag Manager -->
-  <!--Pageone animation Via CDN-->
-  <link href="https://cdn.jsdelivr.net/npm/pagedone@1.1.2/src/css/pagedone.css"/>
-  <script src="https://cdn.jsdelivr.net/npm/pagedone@1.1.2/src/js/pagedone.js"></script>
+  
   <!-- Vercel Analytics -->
   <script>
 	window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
@@ -118,6 +120,7 @@
       autoplay
       loop
       muted
+      controls
       class="opacity-70 absolute z-10 w-auto min-w-full min-h-full max-w-none"
     >
       <source src="./asset/d/banner.mp4"  type="video/mp4"/>
@@ -182,7 +185,7 @@
   <!-- sport Section -->
   <section id="sport" class="bg-gradient-to-r from-stone-50 from-10% via-stone-100 via-40% to-stone-50 to-90% py-12">
    <div class="container text-center mx-auto">
-    <h2 class="text-4xl text-sky-900 font-bold text-black mb-6 delay-[100ms] duration-[600ms] taos:scale-[0.6] taos:opacity-0" data-taos-offset="100">
+    <h2 class="text-4xl text-sky-900 font-bold text-black mb-6 delay-[100ms] duration-[600ms] taos:scale-[0.6] taos:opacity-0 taos-init" data-taos-offset="100">
      体育赛事
     </h2>
      <p class="text-base text-center mx-3 mb-8 delay-[300ms] duration-[1000ms] [animation-iteration-count:infinite] taos:translate-y-[-40px] taos:opacity-0" data-taos-offset="100">
